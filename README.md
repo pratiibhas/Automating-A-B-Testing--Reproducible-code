@@ -64,7 +64,7 @@ numeric_cols = feature_types['numeric']
 # Step 3: Run EDA selectively
 run_eda(df)  # or just plot columns you care about '''
 
-
+```
 AB-Testing-Framework/
 │
 ├── data/                         # Raw input files (Airbnb listings, etc.)
@@ -77,4 +77,4 @@ AB-Testing-Framework/
 │   └── eda_plot.py               # (Optional, for controlled plotting)
 ├── README.md                     # This file
 └── requirements.txt              # (Coming soon)
-
+```
