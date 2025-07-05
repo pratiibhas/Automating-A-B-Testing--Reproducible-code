@@ -45,24 +45,8 @@ We'll simulate A/B conditions, engineer derived features (e.g., `description_len
 
 ---
 
-## 🚀 Usage (Example in Notebook)
 
-'''python
-# Import reusable components
-from modules import DataIngestion, get_feature_types, run_eda
 
-# Step 1: Ingest listing & calendar data
-ingestor = DataIngestion("data/")
-data_dict = ingestor.load()
-df = data_dict['listings.csv']
-
-# Step 2: Classify features
-feature_types = get_feature_types(df)
-categorical_cols = feature_types['categorical']
-numeric_cols = feature_types['numeric']
-
-# Step 3: Run EDA selectively
-run_eda(df)  # or just plot columns you care about '''
 
 ```
 AB-Testing-Framework/
