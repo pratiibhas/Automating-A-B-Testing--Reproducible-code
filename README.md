@@ -24,14 +24,14 @@ The project is structured as a **modular pipeline** to ensure each part of the e
 
 ### 🔄 Modular Components:
 
-| Module               | Purpose                                                       |
-|----------------------|---------------------------------------------------------------|
-| `data_ingestion.py`  | Load data from CSV files or entire directories                |
-| `feature_types.py`   | Automatically detect and classify categorical & numeric features |
-| `eda.py`             | Perform modular, non-intrusive EDA (user-controlled plotting) |
-| `eda_plot.py`        | Optional visualizations driven by selected columns            |
-| `ab_test.py`         | [Planned] Statistical testing module (t-tests, uplift, etc.)  |
-| `experiment_runner.py` | [Planned] Unified interface to run experiments end-to-end     |
+| Module                             | Purpose                                                       |
+|----------------------              |---------------------------------------------------------------|
+| `data_ingestion.py`                | Load data from CSV files or entire directories                |
+| `feature_types.py`                 | Automatically detect and classify categorical & numeric features |
+| `eda.py`                           | Perform modular, non-intrusive EDA (user-controlled plotting) |
+| `eda_biavariate_analysis.py`       | Optional visualizations driven by selected columns            |
+| `simulate_ab_test.py`              |  Statistical testing module (t-tests, uplift, etc.)  |
+| `experiment_runner.py`             | [Planned] Unified interface to run experiments end-to-end     |
 
 ---
 
@@ -56,9 +56,10 @@ AB-Testing-Framework/
 ├── modules/                      # Modular Python components
 │   ├── __init__.py
 │   ├── data_ingestion.py
-│   ├── feature_types.py
 │   ├── eda.py
-│   └── eda_plot.py               # (Optional, for controlled plotting)
+│   ├──eda_uniavariate_analysis.py
+|   ├──eda_biavariate_analysis.py
+│   └── simulation.py           
 ├── README.md                     # This file
 └── requirements.txt              # (Coming soon)
 ```
