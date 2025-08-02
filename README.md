@@ -1,4 +1,4 @@
-# 🧪 A/B Testing & Experimentation Framework (Ongoing Project)
+# 🧪 A/B Testing & Experimentation Framework 
 
 ## 📌 Overview
 
@@ -6,7 +6,6 @@ This project aims to build a **reusable, modular, and automated framework for A/
 
 Rather than treating every experiment as a one-off script, this project abstracts common components like data ingestion, preprocessing, feature typing, EDA, and statistical analysis into reusable modules.
 
-> 🚧 **Note:** This is a live, work-in-progress project aimed at building a production-grade experimentation pipeline.
 
 ---
 
@@ -27,11 +26,11 @@ The project is structured as a **modular pipeline** to ensure each part of the e
 | Module                             | Purpose                                                       |
 |----------------------              |---------------------------------------------------------------|
 | `data_ingestion.py`                | Load data from CSV files or entire directories                |
-| `feature_types.py`                 | Automatically detect and classify categorical & numeric features |
-| `eda.py`                           | Perform modular, non-intrusive EDA (user-controlled plotting) |
-| `eda_biavariate_analysis.py`       | Optional visualizations driven by selected columns            |
+| `feature_types.py` (optional)      | Automatically detect and classify categorical & numeric features |
+| `eda_univariate_analysis.py`       | Perform modular, non-intrusive EDA (user-controlled plotting) |
+| `eda_bivariate_analysis.py`        | Optional visualizations driven by selected columns            |
 | `simulate_ab_test.py`              |  Statistical testing module (t-tests, uplift, etc.)  |
-| `experiment_runner.py`             | [Planned] Unified interface to run experiments end-to-end     |
+| `notebook.py`                      | Unified interface to run experiments end-to-end     |
 
 ---
 
