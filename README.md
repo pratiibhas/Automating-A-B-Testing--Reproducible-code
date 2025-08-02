@@ -51,11 +51,7 @@ AB-Testing-Framework/
 ```
 
 
-## 🎯 Why This Project?
 
-* ✅ **Efficiency & Consistency**: A/B testing workflows are often repetitive; this framework standardizes them.
-* ⚠️ **Maintainability**: Eliminates scattered, ad-hoc scripts within organizations.
-* 📦 **Reusability**: Provides clean, version-controlled tools for analysts and data scientists.
 
 ---
 
