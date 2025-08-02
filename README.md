@@ -19,22 +19,7 @@ Rather than treating every experiment as a one-off script, this project abstract
 
 ---
 
-## 🛠️ How Are We Doing This?
 
-The project is structured as a **modular pipeline** to ensure each part of the experimentation lifecycle is cleanly separated and reusable:
-
-### 🔄 Modular Components:
-
-| Module                             | Purpose                                                       |
-|----------------------              |---------------------------------------------------------------|
-| `data_ingestion.py`                | Load data from CSV files or entire directories                |
-| `feature_types.py` (optional)      | Automatically detect and classify categorical & numeric features |
-| `eda_univariate_analysis.py`       | Perform modular, non-intrusive EDA (user-controlled plotting) |
-| `eda_bivariate_analysis.py`        | Optional visualizations driven by selected columns            |
-| `simulate_ab_test.py`              |  Statistical testing module (t-tests, uplift, etc.)  |
-| `notebook.py`                      | Unified interface to run experiments end-to-end     |
-
----
 
 ## 📊 Current Experiment: Airbnb Listings
 
